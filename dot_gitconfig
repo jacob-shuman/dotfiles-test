@@ -1,0 +1,12 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Jacob Shuman
+	email = 44483276+jacob-shuman@users.noreply.github.com
+[push]
+	autoSetupRemove = true
+[init]
+	defaultBranch = main
