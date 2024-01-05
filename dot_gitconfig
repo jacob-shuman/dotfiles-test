@@ -4,7 +4,7 @@
 	process = git-lfs filter-process
 	required = true
 [user]
-	name = Jacob Shoman
+	name = Jacob Shuman
 	email = 44483276+jacob-shuman@users.noreply.github.com
 [push]
 	autoSetupRemove = true
