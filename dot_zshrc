@@ -1,9 +1,7 @@
 # ZSH Text Suggestions
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-
-
-
+alias ff='echo cool'
 
 # node version manager
 export NVM_DIR="$HOME/.nvm"
