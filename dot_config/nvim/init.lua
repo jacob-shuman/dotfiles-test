@@ -26,6 +26,12 @@ local plugins = {
 	"nvim-treesitter/nvim-treesitter",
 --	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 	{
+        	"folke/tokyonight.nvim",
+  		lazy = false,
+		priority = 1000,
+		opts = {},
+	},
+	{
 		'nvim-telescope/telescope.nvim',
 		branch = '0.1.x',
 		dependencies = { "nvim-lua/plenary.nvim" }
@@ -44,10 +50,11 @@ local plugins = {
 
 require("lazy").setup(plugins, {})
 
--- Theme
-vim.cmd.colorscheme "catppuccin"
+-- theme
+-- vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme "tokyonight"
 
--- Telescope
+-- telescope
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
