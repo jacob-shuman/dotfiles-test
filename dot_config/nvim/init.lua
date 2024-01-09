@@ -73,7 +73,7 @@ require'nvim-web-devicons'.setup()
 -- lualine
 require('lualine').setup {
   options = {
-    theme = 'tokyonight'
+    theme = 'tokyonight',
     style = 'night'
   }
 }
