@@ -70,6 +70,8 @@ vim.api.nvim_set_keymap(
 
 require'nvim-web-devicons'.setup()
 
+require("tokyonight").setup({style = "night"})
+
 -- lualine
 require('lualine').setup {
   options = {
