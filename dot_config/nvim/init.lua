@@ -45,8 +45,7 @@ local plugins = {
 require("lazy").setup(plugins, {})
 
 -- Theme
-colorscheme = catppuccin
--- vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme "catppuccin"
 
 -- Telescope
 local builtin = require('telescope.builtin')
