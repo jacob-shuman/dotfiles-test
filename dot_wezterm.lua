@@ -1,7 +1,9 @@
 local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
-config.color_scheme = 'Catppuccin Mocha'
+
+-- config.color_scheme = 'Catppuccin Mocha'
+config.color_scheme = 'GitHub Dark'
 
 -- window
 config.window_decorations = "RESIZE"
