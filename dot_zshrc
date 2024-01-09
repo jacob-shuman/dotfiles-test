@@ -22,7 +22,7 @@ eval $(thefuck --alias)
 
 # chezmoi aliases
 alias ch='chezmoi'
-alias cho='ch cd && ghv cd -'
+alias cho='ch cd && ghv && cd -'
 
 # quick restart
 alias restart='sudo shutdown -r now'
