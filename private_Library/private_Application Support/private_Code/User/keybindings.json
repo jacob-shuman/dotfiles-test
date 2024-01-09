@@ -1,0 +1,121 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+cmd+j",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "ctrl+shift+1",
+        "command": "extension.open.class"
+    },
+    {
+        "key": "ctrl+numpad1",
+        "command": "-extension.open.class"
+    },
+    {
+        "key": "ctrl+shift+3",
+        "command": "extension.open.style"
+    },
+    {
+        "key": "ctrl+numpad3",
+        "command": "-extension.open.style"
+    },
+    {
+        "key": "ctrl+shift+2",
+        "command": "extension.open.template"
+    },
+    {
+        "key": "ctrl+numpad2",
+        "command": "-extension.open.template"
+    },
+    {
+        "key": "ctrl+shift+4",
+        "command": "extension.open.test"
+    },
+    {
+        "key": "ctrl+numpad4",
+        "command": "-extension.open.test"
+    },
+    {
+        "key": "cmd+k t",
+        "command": "editor.emmet.action.wrapWithAbbreviation"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "editor.action.transformToLowercase",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+u",
+        "command": "editor.action.transformToUppercase",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+t",
+        "command": "editor.action.transformToTitlecase",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+cmd+\\",
+        "command": "editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+\\",
+        "command": "-editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+\\",
+        "command": "editor.action.selectToBracket",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+cmd+up",
+        "command": "editor.action.smartSelect.grow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+f12",
+        "command": "editor.action.goToTypeDefinition"
+    },
+    {
+        "key": "alt+cmd+g",
+        "command": "snippet-generator.generate-snippet"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "npm-script.run"
+    },
+    {
+        "key": "cmd+r shift+r",
+        "command": "-npm-script.run",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "alt+cmd+b",
+        "command": "workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "ctrl+shift+alt+down",
+        "command": "file-tree-navigator.nextFile"
+    },
+    {
+        "key": "ctrl+shift+alt+up",
+        "command": "file-tree-navigator.prevFile"
+    },
+    {
+        "key": "ctrl+shift+alt+left",
+        "command": "file-tree-navigator.parentDirectory"
+    },
+    {
+        "key": "cmd+i",
+        "command": "-emojisense.quickEmojiTerminal",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+i",
+        "command": "-emojisense.quickEmoji",
+        "when": "editorTextFocus"
+    }
+]
