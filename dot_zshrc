@@ -11,6 +11,7 @@ alias resource='source ~/.zshrc'
 alias cat='bat'
 alias lsa='ls -lAFh'
 alias lss='du -sh *'
+alias ch='chezmoi'
 alias n='nvim'
 alias ni='nvim --headless +PlugInstall +qall'
 alias ls='eza'
@@ -19,10 +20,6 @@ alias ghd='github .'
 alias ghv='gh repo view -w'
 alias ghpv='gh pr view -w'
 eval $(thefuck --alias)
-
-# chezmoi aliases
-alias ch='chezmoi'
-alias cho='ch cd && ghv && cd -'
 
 # quick restart
 alias restart='sudo shutdown -r now'
