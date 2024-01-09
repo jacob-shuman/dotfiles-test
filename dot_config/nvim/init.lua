@@ -1,14 +1,14 @@
--- Leader
+-- leader
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
--- Font
+-- font
 vim.cmd('set guifont=Monocraft')
 
--- Line Numbers
+-- line numbers
 vim.wo.relativenumber = true
 
--- Bootstrap Lazy Nvim
+-- bootstrap lazy nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -65,5 +65,5 @@ vim.api.nvim_set_keymap(
 
 require'nvim-web-devicons'.setup()
 
--- Lualine
+-- lualine
 require('lualine').setup()
