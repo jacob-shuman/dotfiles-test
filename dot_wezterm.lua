@@ -4,7 +4,7 @@ local config = wezterm.config_builder()
 
 -- config.color_scheme = 'Catppuccin Mocha'
 -- config.color_scheme = 'GitHub Dark'
-config.color_scheme = 'Gruvbox Dark (Gogh)'
+config.color_scheme = 'Tokyo Night'
 
 -- window
 config.window_decorations = "RESIZE"
