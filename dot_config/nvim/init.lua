@@ -71,4 +71,11 @@ vim.api.nvim_set_keymap(
 require'nvim-web-devicons'.setup()
 
 -- lualine
-require('lualine').setup()
+--require('lualine').setup()
+require('lualine').setup {
+  options = {
+    -- ... your lualine config
+    theme = 'tokyonight'
+    -- ... your lualine config
+  }
+}
