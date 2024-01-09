@@ -9,42 +9,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# aliases
-alias resource='source ~/.zshrc'
-alias cat='bat'
-alias lsa='ls -lAFh'
-alias lss='du -sh *'
-alias n='nvim'
-alias ni='nvim --headless +PlugInstall +qall'
-alias ls='eza'
-alias bup='brew upgrade'
-alias ghd='github .'
-alias ghv='gh repo view -w'
-alias ghpv='gh pr view -w'
-
-# chezmoi aliases
-alias ch='chezmoi'
-alias chg='chezmoi git'
-alias chv='cd .local/share/chezmoi && ghv && cd -'
-
-# quick restart
-alias restart='sudo shutdown -r now'
-
-# config aliases
-alias nzrc='ch edit --apply ~/.zshrc && resource'
-alias nrc='ch edit --apply ~/.config/nvim/init.lua'
-alias nwrc='ch edit --apply ~/.wezterm.lua'
-alias ngit='ch edit --apply ~/.gitconfig'
-
-# git aliases
-alias gitc='git commit'
-alias gits='git status'
-alias gita='git add'
-
 # variables
 export EDITOR=nvim
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# fzf
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # starship
 eval "$(starship init zsh)"
