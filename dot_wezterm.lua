@@ -1,8 +1,7 @@
 local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
--- config.color_scheme = 'Catppuccin Mocha'
-config.color_scheme = 'ayu'
+config.color_scheme = 'Catppuccin Mocha'
 
 -- window
 config.window_decorations = "RESIZE"
