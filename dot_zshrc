@@ -25,10 +25,10 @@ eval $(thefuck --alias)
 alias restart='sudo shutdown -r now'
 
 # config aliases
-alias nzrc='ch edit ~/.zshrc && resource'
-alias nrc='ch edit ~/.config/nvim/init.lua'
-alias nwrc='ch edit ~/.wezterm.lua'
-alias ngit='ch edit ~/.gitconfig'
+alias nzrc='ch edit --apply ~/.zshrc && resource'
+alias nrc='ch edit --apply ~/.config/nvim/init.lua'
+alias nwrc='ch edit --apply ~/.wezterm.lua'
+alias ngit='ch edit --apply ~/.gitconfig'
 
 # git aliases
 alias gitc='git commit'
