@@ -20,7 +20,7 @@ alias ghd='github .'
 alias ghv='gh repo view -w'
 alias ghpv='gh pr view -w'
 eval $(thefuck --alias)
-
+alias cho='cd .local/share/chezmoi && ghv && cd -'
 # quick restart
 alias restart='sudo shutdown -r now'
 
