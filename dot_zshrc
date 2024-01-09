@@ -1,0 +1,55 @@
+# ZSH Text Suggestions
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# node version manager
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# aliases
+alias resource='source ~/.zshrc'
+alias cat='bat'
+alias lsa='ls -lAFh'
+alias lss='du -sh *'
+alias n='nvim'
+alias ni='nvim --headless +PlugInstall +qall'
+alias ls='eza'
+alias bup='brew upgrade'
+alias ghd='github .'
+alias ghv='gh repo view -w'
+alias ghpv='gh pr view -w'
+alias ch='chezmoi'
+eval $(thefuck --alias)
+
+# quick restart
+alias restart='sudo shutdown -r now'
+
+# config aliases
+alias nzrc='ch edit ~/.zshrc'
+alias nrc='ch edit ~/.config/nvim/init.lua'
+alias nwrc='ch edit ~/.wezterm.lua'
+alias ngit='ch edit ~/.gitconfig'
+
+# git aliases
+alias gitc='git commit'
+alias gits='git status'
+alias gita='git add'
+
+# variables
+export EDITOR=nvim
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# starship
+eval "$(starship init zsh)"
+
+# bun
+export PATH="$PATH:$HOME/.bun/bin"
+[ -s "/Users/jacob-shuman/.bun/_bun" ] && source "/Users/jacob-shuman/.bun/_bun"
+
+# pnpm
+export PNPM_HOME="/Users/jacob-shuman/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
