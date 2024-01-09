@@ -12,8 +12,9 @@ alias ghpv='gh pr view -w'
 
 # chezmoi
 alias ch='chezmoi'
+alias chd='cd .local/share/chezmoi'
 alias chs='chezmoi git'
-alias chv='cd .local/share/chezmoi && ghv && cd -'
+alias chv='chd && ghv && cd -'
 
 # quick restart
 alias restart='sudo shutdown -r now'
