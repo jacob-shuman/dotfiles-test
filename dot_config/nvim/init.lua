@@ -2,7 +2,6 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-
 -- font
 vim.cmd('set guifont=Monocraft')
 
