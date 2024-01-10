@@ -30,7 +30,17 @@ config.keys = {
     mods = 'LEADER',
     key = 'm',
     action = wezterm.action.TogglePaneZoomState
-  }
+  },
+-- move between split panes
+  split_nav('move', 'h'),
+  split_nav('move', 'j'),
+  split_nav('move', 'k'),
+  split_nav('move', 'l'),
+-- resize panes
+  split_nav('resize', 'h'),
+  split_nav('resize', 'j'),
+  split_nav('resize', 'k'),
+  split_nav('resize', 'l'),
 }
 
 return config
