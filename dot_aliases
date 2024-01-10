@@ -22,6 +22,7 @@ alias restart='sudo shutdown -r now'
 # config
 alias nzrc='ch edit --apply ~/.zshrc'
 alias nza='ch edit --apply ~/.aliases && resource'
+alias ncr='ch edit --apply ~/.cron'
 alias nrc='ch edit --apply ~/.config/nvim/init.lua'
 alias nwrc='ch edit --apply ~/.config/wezterm/wezterm.lua'
 alias ngit='ch edit --apply ~/.gitconfig'
