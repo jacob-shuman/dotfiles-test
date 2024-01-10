@@ -23,6 +23,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
+	{
+  		"mrjones2014/smart-splits.nvim"
+	},
 	"nvim-treesitter/nvim-treesitter",
 	{
         	"folke/tokyonight.nvim",
