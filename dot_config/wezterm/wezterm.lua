@@ -1,9 +1,6 @@
 local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
-
--- config.color_scheme = 'Catppuccin Mocha'
--- config.color_scheme = 'GitHub Dark'
 config.color_scheme = 'Tokyo Night'
 
 -- window
@@ -15,5 +12,20 @@ config.inactive_pane_hsb = { saturation = 0.8, brightness = 0.7 }
 -- font
 config.font = wezterm.font 'Monocraft'
 config.font_size = 16.0
+
+-- multiplexing
+config.leader = { key = 'a', mods = 'CTRL', timeout_milliseconds = 1000 }
+config.keys = {
+  {
+    mods   = "LEADER",
+    key    = "-",
+    action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' }
+  },
+  {
+    mods   = "LEADER",
+    key    = "=",
+    action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' }
+  }
+}
 
 return config
