@@ -13,7 +13,7 @@ alias ghpv='gh pr view -w'
 # chezmoi
 alias ch='chezmoi'
 alias chd='cd ~/.local/share/chezmoi'
-alias chs='chezmoi git'
+alias chg='chezmoi git'
 alias chv='chd && ghv && cd -'
 
 # quick restart
