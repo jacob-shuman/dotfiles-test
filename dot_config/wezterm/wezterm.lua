@@ -2,7 +2,7 @@ local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
 -- config.color_scheme = 'Tokyo Night'
-config.color_scheme = 'Abernathy'
+config.color_scheme = 'Afterglow'
 
 -- window
 config.window_decorations = "RESIZE"
