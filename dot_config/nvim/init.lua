@@ -50,7 +50,7 @@ local plugins = {
 require("lazy").setup(plugins, {})
 
 -- theme
-vim.cmd.colorscheme "tokyonight-night"
+vim.cmd.colorscheme "ayu"
 
 -- telescope
 local builtin = require('telescope.builtin')
