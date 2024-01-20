@@ -2,7 +2,7 @@ local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
 -- config.color_scheme = 'Tokyo Night'
-config.color_scheme = 'Atelier Plateau (base16)'
+config.color_scheme = 'Ayu Dark (Gogh)'
 
 -- window
 config.window_decorations = "RESIZE"
