@@ -24,7 +24,6 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
 	"nvim-treesitter/nvim-treesitter",
-	"ayu-theme/ayu-vim",
 	{
         	"folke/tokyonight.nvim",
   		lazy = false,
@@ -51,7 +50,7 @@ local plugins = {
 require("lazy").setup(plugins, {})
 
 -- theme
-vim.cmd.colorscheme "ayu"
+vim.cmd.colorscheme "tokyonight-dark"
 
 -- telescope
 local builtin = require('telescope.builtin')
