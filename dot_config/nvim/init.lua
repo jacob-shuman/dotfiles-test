@@ -24,12 +24,13 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
 	"nvim-treesitter/nvim-treesitter",
-	{
-        	"folke/tokyonight.nvim",
-  		lazy = false,
-		priority = 1000,
-		opts = {},
-	},
+	"ayu-theme/ayu-vim",
+	--{
+        --	"folke/tokyonight.nvim",
+  	--	lazy = false,
+	--	priority = 1000,
+	--	opts = {},
+	--},
 	{
 		'nvim-telescope/telescope.nvim',
 		branch = '0.1.x',
