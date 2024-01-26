@@ -9,6 +9,7 @@ alias bup='brew upgrade'
 alias ghd='github .'
 alias ghv='gh repo view -w'
 alias ghpv='gh pr view -w'
+alias ghp='gh pr create -fa @me'
 alias ghpd='gh pr create -fda @me'
 
 # chezmoi
