@@ -1,6 +1,9 @@
 # aliases
 source ~/.aliases
 
+# setup cd alternative
+eval "$(zoxide init zsh)"
+
 # zsh text suggestions
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
