@@ -1,4 +1,5 @@
 alias resource='source ~/.zshrc'
+alias cd='z'
 alias cat='bat'
 alias ls='eza'
 alias lsa='eza -lAFh'
