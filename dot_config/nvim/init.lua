@@ -29,11 +29,11 @@ local plugins = {
 		lazy = false,
 		priority = 1000,
 		config = function()
-            		require('ayu').setup({
-                		mirage = false,
+				require('ayu').setup({
+						mirage = false,
                 		terminal = true,
                 		overrides = {},
-            		})
+            	})
         	end
 	},
 	{
@@ -60,6 +60,8 @@ vim.cmd.colorscheme "ayu"
 
 -- tab width
 vim.opt.tabstop = 4
+vim.opt.softabstop = 4
+vim.opt.shiftwidth = 4
 
 -- telescope
 local builtin = require('telescope.builtin')
