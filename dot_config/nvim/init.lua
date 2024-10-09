@@ -60,7 +60,7 @@ vim.cmd.colorscheme "ayu"
 
 -- tab width
 vim.opt.tabstop = 4
-vim.opt.softabstop = 4
+vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 
 -- telescope
