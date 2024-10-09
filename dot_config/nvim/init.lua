@@ -31,7 +31,7 @@ local plugins = {
 	--	opts = {},
 	--},
 	{
-		'Shatur/neovim-ayu',
+		'ayu-theme/ayu-vim',
 		lazy = false,
 		priority = 1000,
 		opts = {}
@@ -57,7 +57,7 @@ require("lazy").setup(plugins, {})
 
 -- theme
 -- vim.cmd.colorscheme "tokyonight"
-vim.cmd.colorscheme "ayu"
+-- vim.cmd.colorscheme "ayu"
 
 -- telescope
 local builtin = require('telescope.builtin')
