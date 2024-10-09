@@ -32,7 +32,7 @@ local plugins = {
 	--},
 	{
 		'Shatur/neovim-ayu',
-		lazy = "ayu",
+		lazy = false,
 		priority = 1000,
 		opts = {}
 	},
