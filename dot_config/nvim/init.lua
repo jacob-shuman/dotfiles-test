@@ -78,8 +78,8 @@ vim.api.nvim_set_keymap(
 require'nvim-web-devicons'.setup()
 
 -- lualine
-require('lualine').setup {
-  options = {
-    theme = 'ayu',
-  }
-}
+--require('lualine').setup {
+--  options = {
+--    theme = 'ayu',
+--  }
+--}
