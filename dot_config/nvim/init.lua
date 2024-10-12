@@ -67,12 +67,25 @@ vim.opt.shiftwidth = 4
 
 -- telescope
 local builtin = require('telescope.builtin')
+local actions = require('telescope.actions')
+
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
-require("telescope").load_extension "file_browser"
+require('telescope').setup {
+    defaults = {
+        mappings = {
+            i = {
+                ["<C-j>"] = actions.move_selection_next,  -- Go to the next item
+                ["<C-k>"] = actions.move_selection_previous, -- Go to the previous item
+            },
+        },
+    },
+}
+
+-- require("telescope").load_extension "file_browser"
 
 vim.api.nvim_set_keymap(
   "n",
