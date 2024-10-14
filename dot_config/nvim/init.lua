@@ -2,10 +2,6 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
--- font
-vim.cmd('set guifont=Monocraft')
--- vim.cmd('set guifont=Monaspace\ Neon\ Var')
-
 -- line numbers
 vim.wo.relativenumber = true
 vim.wo.number = true
