@@ -11,6 +11,7 @@ config.inactive_pane_hsb = { saturation = 0.8, brightness = 0.7 }
 
 -- font
 -- config.font = wezterm.font 'Monocraft'
+config.font = wezterm.font 'Monaspace Neon Var'
 config.font_size = 16.0
 
 -- multiplexing
