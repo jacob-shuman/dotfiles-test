@@ -22,6 +22,13 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
 	{
+		'goolord/alpha-nvim',
+		dependencies = { 'echasnovski/mini.icons' },
+		config = function ()
+			require'alpha'.setup(require'alpha.themes.startify'.config)
+		end
+	},
+	{
 		"folke/which-key.nvim",
 		event = "VeryLazy",
 		keys = {
