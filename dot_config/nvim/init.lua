@@ -21,6 +21,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
+	{ 'echasnovski/mini.nvim', version = '*' },
 	"nvim-treesitter/nvim-treesitter",
 	{
 		'Shatur/neovim-ayu',
