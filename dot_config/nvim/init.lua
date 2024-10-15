@@ -23,9 +23,9 @@ vim.opt.rtp:prepend(lazypath)
 local plugins = {
 	{
 		'goolord/alpha-nvim',
-		dependencies = { 'echasnovski/mini.icons', 'nvim-lua/plenary.nvim' },
+		dependencies = { 'echasnovski/mini.icons' },
 		config = function ()
-			require'alpha'.setup(require'alpha.themes.dashboard'.config)
+			require'alpha'.setup(require'alpha.themes.startify'.config)
 		end
 	},
 	{
