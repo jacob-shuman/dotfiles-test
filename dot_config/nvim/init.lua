@@ -9,14 +9,14 @@ vim.wo.number = true
 -- bootstrap lazy nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
-  vim.fn.system({
-    "git",
-    "clone",
-    "--filter=blob:none",
-    "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- latest stable release
-    lazypath,
-  })
+	vim.fn.system({
+		"git",
+		"clone",
+		"--filter=blob:none",
+		"https://github.com/folke/lazy.nvim.git",
+		"--branch=stable", -- latest stable release
+		lazypath,
+	})
 end
 vim.opt.rtp:prepend(lazypath)
 
@@ -51,8 +51,8 @@ local plugins = {
 				mirage = false,
 				terminal = true,
 				overrides = {},
-            })
-        end
+			})
+		end
 	},
 	{
 		'nvim-telescope/telescope.nvim',
@@ -66,7 +66,7 @@ local plugins = {
 	},
 	{
 		'nvim-lualine/lualine.nvim',
-  		dependencies = { 'nvim-tree/nvim-web-devicons', opt = true }
+		dependencies = { 'nvim-tree/nvim-web-devicons', opt = true }
 	},
 }
 
@@ -91,30 +91,30 @@ vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
 require('telescope').setup {
-    defaults = {
-        mappings = {
-            i = {
-                ["<C-j>"] = actions.move_selection_next,  -- Go to the next item
-                ["<C-k>"] = actions.move_selection_previous, -- Go to the previous item
-            },
-        },
-    },
+	defaults = {
+		mappings = {
+			i = {
+				["<C-j>"] = actions.move_selection_next,  -- Go to the next item
+				["<C-k>"] = actions.move_selection_previous, -- Go to the previous item
+			},
+		},
+	},
 }
 
 -- require("telescope").load_extension "file_browser"
 
 vim.api.nvim_set_keymap(
-  "n",
-  "<space>fb",
-  ":Telescope file_browser path=%:p:h select_buffer=true<CR>",
-  { noremap = true }
+"n",
+"<space>fb",
+":Telescope file_browser path=%:p:h select_buffer=true<CR>",
+{ noremap = true }
 )
 
 require'nvim-web-devicons'.setup()
 
 -- lualine
 require('lualine').setup {
-  options = {
-    theme = 'ayu',
-  }
+	options = {
+		theme = 'ayu',
+	}
 }
