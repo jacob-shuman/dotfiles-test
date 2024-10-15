@@ -74,7 +74,7 @@ local plugins = {
 require("lazy").setup(plugins, {})
 
 -- theme
--- vim.cmd.colorscheme "ayu"
+vim.cmd.colorscheme "ayu"
 
 -- tab width
 vim.opt.tabstop = 4
