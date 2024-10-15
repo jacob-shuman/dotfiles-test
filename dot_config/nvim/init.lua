@@ -21,7 +21,19 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-	{ 'echasnovski/mini.nvim', version = '*' },
+	{
+		"folke/which-key.nvim",
+		event = "VeryLazy",
+		keys = {
+			{
+				"<leader>?",
+				function()
+					require("which-key").show({ global = false })
+				end,
+				desc = "Buffer Local Keymaps (which-key)",
+			},
+		},
+	},
 	"nvim-treesitter/nvim-treesitter",
 	{
 		'Shatur/neovim-ayu',
