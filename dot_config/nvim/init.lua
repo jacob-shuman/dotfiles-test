@@ -51,12 +51,19 @@ local plugins = {
 	},
 	{
 		'stevearc/conform.nvim',
-		opts = {},
+		event = { "BufReadPre", "BufNewFile	" },
+		config = function()
+			local conform = require('conform')
+			conform.setup({
+				
 		formatters_by_ft = {
 			lua = { "stylua" },
-			-- Conform will run the first available formatter
-			javascript = { "prettierd", "prettier", stop_after_first = true },
-		},
+			javascript = { { "prettierd", "prettier" } },
+			typescript = { { "prettierd", "prettier" } },
+			svelte = { { "prettierd", "prettier" } },
+				},
+			})
+		end
 	},
 	{
 		"nvim-treesitter/nvim-treesitter",
