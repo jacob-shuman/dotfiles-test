@@ -44,7 +44,7 @@ local plugins = {
 	{
 		'stevearc/conform.nvim',
 		opts = {},
-	}
+	},
 	{
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
