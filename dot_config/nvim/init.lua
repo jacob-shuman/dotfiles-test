@@ -98,8 +98,6 @@ local plugins = {
 		'nvim-lualine/lualine.nvim',
 		dependencies = { 'nvim-tree/nvim-web-devicons', opt = true }
 	},
-	-- autocompletion
-	{ "hrsh7th/cmp-cmdline" },
 }
 
 
