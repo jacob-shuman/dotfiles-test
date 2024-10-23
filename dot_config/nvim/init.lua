@@ -42,6 +42,14 @@ local plugins = {
 		},
 	},
 	{
+		"folke/noice.nvim",
+		event = "VeryLazy",
+		dependencies = {
+			"MunifTanjim/nui.nvim",
+			"rcarriga/nvim-notify",
+		}
+	},
+	{
 		'stevearc/conform.nvim',
 		opts = {},
 		formatters_by_ft = {
