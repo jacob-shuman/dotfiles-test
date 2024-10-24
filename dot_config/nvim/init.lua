@@ -115,8 +115,8 @@ vim.cmd.colorscheme "ayu"
 
 -- custom line number colors
 vim.opt.cursorline = true
---vim.api.nvim_set_hl(0, "LineNr", { fg = "#FF0000" })         -- Color for all line numbers
-vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#00FF00" }) -- Color for the current line number
+vim.api.nvim_set_hl(0, "LineNr", { fg = "#6C738080" })         -- Color for all line numbers
+vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#6C7380E6" }) -- Color for the current line number
 
 -- tab width
 vim.opt.tabstop = 4
