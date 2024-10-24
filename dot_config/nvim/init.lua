@@ -58,12 +58,13 @@ local plugins = {
 				format_on_save = {
 					timeout_ms = 500,
 					lsp_format = "fallback",
+					stop_after_first = true,
 				},
 				formatters_by_ft = {
 					lua = { "stylua" },
-					javascript = { { "prettierd", "prettier" } },
-					typescript = { { "prettierd", "prettier" } },
-					svelte = { { "prettierd", "prettier" } },
+					javascript = { "prettierd", "prettier" },
+					typescript = { "prettierd", "prettier" },
+					svelte = { "prettierd", "prettier" },
 				},
 			})
 		end,
