@@ -202,6 +202,6 @@ require('lualine').setup {
 vim.cmd [[
   augroup set_bash_for_no_extension
     autocmd!
-    autocmd BufNewFile,BufRead * setlocal filetype=bash
+    autocmd BufNewFile,BufRead * if expand("%:e") == "" | setlocal filetype=bash | endif
   augroup END
 ]]
