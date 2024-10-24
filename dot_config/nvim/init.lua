@@ -112,7 +112,10 @@ require("lazy").setup(plugins, {})
 
 -- theme
 vim.cmd.colorscheme "ayu"
-vim.api.nvim_set_hl(0, 'LineNr', { fg = '#FFB86C' })
+
+-- custom line number colors
+vim.api.nvim_set_hl(0, 'LineNr', { fg = '#FF8F40' })
+vim.api.nvim_set_hl(0, 'CursorLineNr', { fg = '#50FA7B', bold = true })  -- Customize cursor line number
 
 -- tab width
 vim.opt.tabstop = 4
