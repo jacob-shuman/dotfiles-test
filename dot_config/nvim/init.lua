@@ -1,6 +1,6 @@
 -- leader
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 -- line numbers
 vim.wo.relativenumber = true
@@ -22,11 +22,11 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
 	{
-		'goolord/alpha-nvim',
-		dependencies = { 'echasnovski/mini.icons' },
-		config = function ()
-			require'alpha'.setup(require'alpha.themes.startify'.config)
-		end
+		"goolord/alpha-nvim",
+		dependencies = { "echasnovski/mini.icons" },
+		config = function()
+			require("alpha").setup(require("alpha.themes.startify").config)
+		end,
 	},
 	{
 		"folke/which-key.nvim",
@@ -47,58 +47,57 @@ local plugins = {
 		dependencies = {
 			"MunifTanjim/nui.nvim",
 			"rcarriga/nvim-notify",
-		}
+		},
 	},
 	{
-		'stevearc/conform.nvim',
+		"stevearc/conform.nvim",
 		event = { "BufReadPre", "BufNewFile	" },
 		config = function()
-			local conform = require('conform')
+			local conform = require("conform")
 			conform.setup({
-			format_on_save = {
-    -- These options will be passed to conform.format()
-    timeout_ms = 500,
-    lsp_format = "fallback",
-  },	
-		formatters_by_ft = {
-			lua = { "stylua" },
-			javascript = { { "prettierd", "prettier" } },
-			typescript = { { "prettierd", "prettier" } },
-			svelte = { { "prettierd", "prettier" } },
+				format_on_save = {
+					timeout_ms = 500,
+					lsp_format = "fallback",
+				},
+				formatters_by_ft = {
+					lua = { "stylua" },
+					javascript = { { "prettierd", "prettier" } },
+					typescript = { { "prettierd", "prettier" } },
+					svelte = { { "prettierd", "prettier" } },
 				},
 			})
-		end
+		end,
 	},
 	{
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
-		config = function () 
+		config = function()
 			local configs = require("nvim-treesitter.configs")
 
 			configs.setup({
 				ensure_installed = { "lua", "javascript", "html", "css", "typescript", "svelte", "markdown" },
 				sync_install = false,
 				highlight = { enable = true },
-				indent = { enable = true },  
+				indent = { enable = true },
 			})
-		end
+		end,
 	},
 	{
-		'Shatur/neovim-ayu',
+		"Shatur/neovim-ayu",
 		lazy = false,
 		priority = 1000,
 		config = function()
-			require('ayu').setup({
+			require("ayu").setup({
 				mirage = false,
 				terminal = true,
 				overrides = {},
 			})
-		end
+		end,
 	},
 	{
-		'nvim-telescope/telescope.nvim',
-		branch = '0.1.x',
-		dependencies = { "nvim-lua/plenary.nvim" }
+		"nvim-telescope/telescope.nvim",
+		branch = "0.1.x",
+		dependencies = { "nvim-lua/plenary.nvim" },
 	},
 	"nvim-tree/nvim-web-devicons",
 	{
@@ -106,21 +105,20 @@ local plugins = {
 		dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
 	},
 	{
-		'nvim-lualine/lualine.nvim',
-		dependencies = { 'nvim-tree/nvim-web-devicons', opt = true }
+		"nvim-lualine/lualine.nvim",
+		dependencies = { "nvim-tree/nvim-web-devicons", opt = true },
 	},
 }
-
 
 require("lazy").setup(plugins, {})
 
 -- theme
-vim.cmd.colorscheme "ayu"
+vim.cmd.colorscheme("ayu")
 
 -- custom line number colors
 vim.opt.cursorline = true
-vim.api.nvim_set_hl(0, "LineNr", { fg = "#3D4149" })  
-vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#F09552" }) 
+vim.api.nvim_set_hl(0, "LineNr", { fg = "#3D4149" })
+vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#F09552" })
 
 -- tab width
 vim.opt.tabstop = 4
@@ -129,87 +127,87 @@ vim.opt.shiftwidth = 4
 
 -- noice
 require("noice").setup({
-  lsp = {
-    -- override markdown rendering so that **cmp** and other plugins use **Treesitter**
-    override = {
-      ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
-      ["vim.lsp.util.stylize_markdown"] = true,
-      ["cmp.entry.get_documentation"] = true, -- requires hrsh7th/nvim-cmp
-    },
-  },
-  -- you can enable a preset for easier configuration
-presets = {
-    bottom_search = true, -- use a classic bottom cmdline for search
-    -- command_palette = true, -- position the cmdline and popupmenu together
-    long_message_to_split = true, -- long messages will be sent to a split
-    inc_rename = false, -- enables an input dialog for inc-rename.nvim
-    lsp_doc_border = false, -- add a border to hover docs and signature help
-  },
+	lsp = {
+		-- override markdown rendering so that **cmp** and other plugins use **Treesitter**
+		override = {
+			["vim.lsp.util.convert_input_to_markdown_lines"] = true,
+			["vim.lsp.util.stylize_markdown"] = true,
+			["cmp.entry.get_documentation"] = true, -- requires hrsh7th/nvim-cmp
+		},
+	},
+	-- you can enable a preset for easier configuration
+	presets = {
+		bottom_search = true, -- use a classic bottom cmdline for search
+		-- command_palette = true, -- position the cmdline and popupmenu together
+		long_message_to_split = true, -- long messages will be sent to a split
+		inc_rename = false, -- enables an input dialog for inc-rename.nvim
+		lsp_doc_border = false, -- add a border to hover docs and signature help
+	},
 	command_palette = {
-	popupmenu = {
-		relative = "editor",
-          position = {
-            row = 23,
-            col = "50%",
-          },
-          size = {
-            width = 60,
-            height = "auto",
-            max_height = 15,
-          },
-          border = {
-            style = "rounded",
-            padding = { 0, 1 },
-          },
-          win_options = {
-            winhighlight = { Normal = "Normal", FloatBorder = "NoiceCmdlinePopupBorder" },
-          },
-        },
-  }
+		popupmenu = {
+			relative = "editor",
+			position = {
+				row = 23,
+				col = "50%",
+			},
+			size = {
+				width = 60,
+				height = "auto",
+				max_height = 15,
+			},
+			border = {
+				style = "rounded",
+				padding = { 0, 1 },
+			},
+			win_options = {
+				winhighlight = { Normal = "Normal", FloatBorder = "NoiceCmdlinePopupBorder" },
+			},
+		},
+	},
 })
 
 -- telescope
-local builtin = require('telescope.builtin')
-local actions = require('telescope.actions')
+local builtin = require("telescope.builtin")
+local actions = require("telescope.actions")
 
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
+vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
+vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
+vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
 
-require('telescope').setup {
+require("telescope").setup({
 	defaults = {
 		mappings = {
 			i = {
-				["<C-j>"] = actions.move_selection_next,  -- Go to the next item
+				["<C-j>"] = actions.move_selection_next, -- Go to the next item
 				["<C-k>"] = actions.move_selection_previous, -- Go to the previous item
 			},
 		},
 	},
-}
+})
 
 -- require("telescope").load_extension "file_browser"
 
 vim.api.nvim_set_keymap(
-"n",
-"<space>fb",
-":Telescope file_browser path=%:p:h select_buffer=true<CR>",
-{ noremap = true }
+	"n",
+	"<space>fb",
+	":Telescope file_browser path=%:p:h select_buffer=true<CR>",
+	{ noremap = true }
 )
 
-require'nvim-web-devicons'.setup()
+require("nvim-web-devicons").setup()
 
 -- lualine
-require('lualine').setup {
+require("lualine").setup({
 	options = {
-		theme = 'ayu',
-	}
-}
+		theme = "ayu",
+	},
+})
 
 -- files without extensions use bash
-vim.cmd [[
+vim.cmd([[
   augroup set_bash_for_no_extension
     autocmd!
     autocmd BufNewFile,BufRead * if expand("%:e") == "" | setlocal filetype=bash | endif
   augroup END
-]]
+]])
