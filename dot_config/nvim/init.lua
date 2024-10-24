@@ -114,6 +114,7 @@ require("lazy").setup(plugins, {})
 vim.cmd.colorscheme "ayu"
 
 -- custom line number colors
+vim.opt.cursorline = true
 --vim.api.nvim_set_hl(0, "LineNr", { fg = "#FF0000" })         -- Color for all line numbers
 vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#00FF00" }) -- Color for the current line number
 
