@@ -112,6 +112,7 @@ require("lazy").setup(plugins, {})
 
 -- theme
 vim.cmd.colorscheme "ayu"
+vim.api.nvim_set_hl(0, 'LineNr', { fg = '#FFB86C' })
 
 -- tab width
 vim.opt.tabstop = 4
@@ -197,8 +198,7 @@ require('lualine').setup {
 	}
 }
 
--- treesitter
-
+-- files without extensions use bash
 vim.cmd [[
   augroup set_bash_for_no_extension
     autocmd!
