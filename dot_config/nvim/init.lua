@@ -196,3 +196,12 @@ require('lualine').setup {
 		theme = 'ayu',
 	}
 }
+
+-- treesitter
+
+vim.cmd [[
+  augroup set_bash_for_no_extension
+    autocmd!
+    autocmd BufNewFile,BufRead * setlocal filetype=bash
+  augroup END
+]]
