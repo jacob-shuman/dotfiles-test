@@ -139,7 +139,13 @@ vim.opt.updatetime = 250
 -- decrease mapped sequence wait time (displays which-key popup sooner)
 vim.opt.timeoutlen = 300
 
--- TODO: CONTINUE FROM HERE
+-- TODO CONTINUE FROM HERE
+-- FIX
+-- WARNING
+-- HACK
+-- PERF
+-- NOTE
+-- the above should be colored...
 
 -- theme
 vim.cmd.colorscheme("ayu")
