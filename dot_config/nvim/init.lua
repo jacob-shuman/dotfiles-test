@@ -142,11 +142,10 @@ vim.opt.timeoutlen = 300
 
 -- TODO: CONTINUE FROM HERE
 -- FIX:
--- WARNING
--- HACK
--- PERF
--- NOTE
--- the above should be colored...
+-- WARNING:
+-- HACK:
+-- PERF:
+-- NOTE:
 
 -- theme
 vim.cmd.colorscheme("ayu")
