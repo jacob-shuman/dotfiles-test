@@ -135,6 +135,8 @@ vim.opt.updatetime = 250
 -- decrease mapped sequence wait time (displays which-key popup sooner)
 vim.opt.timeoutlen = 300
 
+-- TODO: CONTINUE FROM HERE
+
 -- theme
 vim.cmd.colorscheme("ayu")
 vim.g.have_nerd_font = true
