@@ -113,6 +113,28 @@ local plugins = {
 
 require("lazy").setup(plugins, {})
 
+-- sync nvim and system clipboard
+vim.opt.clipboard = "unnamedplus"
+
+-- indent on line wrap
+vim.opt.breakindent = true
+
+-- save undo history
+vim.opt.undofile = true
+
+-- case insensitive search (unless \C or one or more capital letters are in the search term
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+
+-- keep signcolumn on by default
+vim.opt.signcolumn = "yes"
+
+-- decrease update time
+vim.opt.updatetime = 250
+
+-- decrease mapped sequence wait time (displays which-key popup sooner)
+vim.opt.timeoutlen = 300
+
 -- theme
 vim.cmd.colorscheme("ayu")
 vim.g.have_nerd_font = true
