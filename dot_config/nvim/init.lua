@@ -115,6 +115,7 @@ require("lazy").setup(plugins, {})
 
 -- theme
 vim.cmd.colorscheme("ayu")
+vim.g.have_nerd_font = true
 
 -- custom line number colors
 vim.opt.cursorline = true
