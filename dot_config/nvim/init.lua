@@ -139,8 +139,8 @@ vim.opt.updatetime = 250
 -- decrease mapped sequence wait time (displays which-key popup sooner)
 vim.opt.timeoutlen = 300
 
--- TODO CONTINUE FROM HERE
--- FIX
+-- TODO: CONTINUE FROM HERE
+-- FIX:
 -- WARNING
 -- HACK
 -- PERF
