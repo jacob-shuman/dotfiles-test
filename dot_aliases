@@ -21,6 +21,7 @@ alias ch='chezmoi'
 alias chd='cd ~/.local/share/chezmoi'
 alias chg='chezmoi git'
 alias chv='chd && ghv && cd -'
+alias chn='ch edit --apply'
 
 # quick restart
 alias restart='sudo shutdown -r now'
