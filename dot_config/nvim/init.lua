@@ -1,4 +1,4 @@
-require("./settings.lua")
+require("settings")
 
 -- bootstrap lazy nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
