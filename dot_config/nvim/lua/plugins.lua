@@ -1,4 +1,14 @@
--- bootstrap lazy nvim
+-- TODO: add indent rainbow plugin
+-- TODO: add linting plugin(s)
+-- TODO: add autocompletion plugin(s)
+-- TODO: add filetree plugin
+-- TODO: figure out git usage
+-- TODO: figure out spotify usage
+-- TODO: add tmux and/or window/panel remaps
+-- TODO: add sessions
+-- TODO: remap caps lock to escape
+-- TODO: figure out integrated terminal possibly- bootstrap lazy nvim
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({
