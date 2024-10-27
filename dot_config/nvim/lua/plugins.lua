@@ -169,7 +169,7 @@ require("nvim-web-devicons").setup()
 
 -- lualine
 require("lualine").setup({
-	options = {
-		theme = "ayu",
-	},
+	--	options = {
+	--		theme = "ayu",
+	--	},
 })
