@@ -110,7 +110,6 @@ local plugins = {
 
 require("lazy").setup(plugins, {})
 
-
 -- noice
 require("noice").setup({
 	lsp = {
@@ -155,7 +154,6 @@ require("noice").setup({
 -- telescope
 local actions = require("telescope.actions")
 
-
 require("telescope").setup({
 	defaults = {
 		mappings = {
@@ -167,7 +165,7 @@ require("telescope").setup({
 	},
 })
 
--- require("telescope").load_extension "file_browser"
+require("telescope").load_extension("file_browser")
 
 require("nvim-web-devicons").setup()
 
