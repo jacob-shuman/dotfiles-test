@@ -1,3 +1,5 @@
+-- TODO: load lazy and plugins before settings because ayu plugin needs to be installed
+
 require("settings")
 
 -- bootstrap lazy nvim
