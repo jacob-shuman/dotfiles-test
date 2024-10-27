@@ -19,6 +19,7 @@ alias una='pnpx unscript -a'
 # chezmoi
 alias ch='chezmoi'
 alias cha='ch add'
+alias chr='ch remove'
 alias chd='cd ~/.local/share/chezmoi'
 alias chg='chezmoi git'
 alias chv='chd && ghv && cd -'
