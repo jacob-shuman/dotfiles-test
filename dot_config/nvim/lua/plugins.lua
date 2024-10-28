@@ -228,3 +228,6 @@ require("Comment").setup()
 
 -- indent-blankline.nvim
 require("ibl").setup()
+
+-- nvim-highlight-colors
+require("nvim-highlight-colors").setup({})
