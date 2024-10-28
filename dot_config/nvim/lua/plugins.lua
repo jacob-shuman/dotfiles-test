@@ -137,6 +137,7 @@ local plugins = {
 		"nvim-lualine/lualine.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons", opt = true },
 	},
+	-- NOTE: file tree
 
 	-- NOTE: comments
 
