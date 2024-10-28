@@ -129,6 +129,7 @@ local plugins = {
 	-- uses correct comment syntax in embedded languages (svelte, vue, etc)
 	"JoosepAlviste/nvim-ts-context-commentstring",
 
+	-- https://github.com/numToStr/Comment.nvim
 	-- comment easily using common mappings in
 	{
 		"numToStr/Comment.nvim",
@@ -211,5 +212,5 @@ require("nvim-web-devicons").setup()
 -- lualine
 require("lualine").setup({})
 
--- Comments.nvim
+-- Comment.nvim
 require("Comment").setup()
