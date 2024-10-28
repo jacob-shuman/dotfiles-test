@@ -222,4 +222,4 @@ require("lualine").setup({})
 require("Comment").setup()
 
 -- indent-blankline.nvim
-require("ibl").setup({ scope = { enabled = false } })
+require("ibl").setup()
