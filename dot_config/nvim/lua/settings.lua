@@ -41,6 +41,7 @@ vim.opt.updatetime = 250
 -- decrease mapped sequence wait time (displays which-key popup sooner)
 vim.opt.timeoutlen = 300
 
+-- TODO: pick better characters
 -- show whitespace characters
 vim.opt.list = true
 vim.opt.listchars = {
