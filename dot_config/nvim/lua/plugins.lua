@@ -127,7 +127,7 @@ local plugins = {
     -- Optional.  If installed, native fzy will be used when match_algorithm is fzy
     { "nvim-telescope/telescope-fzy-native.nvim" },
   },
-}
+},
 	"nvim-tree/nvim-web-devicons",
 	{
 		"nvim-telescope/telescope-file-browser.nvim",
