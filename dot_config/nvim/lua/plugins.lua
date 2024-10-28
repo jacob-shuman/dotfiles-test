@@ -143,15 +143,13 @@ local plugins = {
 	},
 
 	-- NOTE: indent rainbow
-	-- {
-	-- 	"lukas-reineke/indent-blankline.nvim",
-	-- 	opts = function(_, opts)
-	-- 		return require("indent-rainbowline").make_opts(opts)
-	-- 	end,
-	-- 	dependencies = {
-	-- 		"TheGLander/indent-rainbowline.nvim",
-	-- 	},
-	-- },
+	{
+		"lukas-reineke/indent-blankline.nvim",
+		main = "ibl",
+		---@module "ibl"
+		---@type ibl.config
+		opts = {},
+	},
 }
 
 require("lazy").setup(plugins, {})
@@ -225,3 +223,6 @@ require("lualine").setup({})
 
 -- Comment.nvim
 require("Comment").setup()
+
+-- indent-blankline.nvim
+require("ibl").setup()
