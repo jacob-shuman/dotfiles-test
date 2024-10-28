@@ -210,3 +210,6 @@ require("nvim-web-devicons").setup()
 
 -- lualine
 require("lualine").setup({})
+
+-- Comments.nvim
+require("Comment").setup()
