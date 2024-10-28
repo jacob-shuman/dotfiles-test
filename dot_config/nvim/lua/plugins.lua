@@ -52,9 +52,9 @@ local plugins = {
 		},
 	},
 	{
-		"folke/persistence.nvim",
-		event = "BufReadPre", -- this will only start session saving when an actual file was opened
-		opts = {},
+		"olimorris/persisted.nvim",
+		lazy = false,
+		config = true,
 	},
 	{
 		"stevearc/conform.nvim",
@@ -179,6 +179,8 @@ require("telescope").setup({
 		},
 	},
 })
+
+require("telescope").load_extension("persisted")
 
 require("nvim-web-devicons").setup()
 
