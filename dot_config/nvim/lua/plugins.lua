@@ -6,9 +6,9 @@
 -- TODO: figure out spotify usage
 -- TODO: add tmux and/or window/panel remaps
 -- TODO: add sessions
--- TODO: remap caps lock to escape
--- TODO: figure out integrated terminal possibly- bootstrap lazy nvim
+-- TODO: figure out integrated terminal possibly
 
+-- bootstrap lazy nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({
@@ -50,6 +50,11 @@ local plugins = {
 			"MunifTanjim/nui.nvim",
 			"rcarriga/nvim-notify",
 		},
+	},
+	{
+		"folke/persistence.nvim",
+		event = "BufReadPre", -- this will only start session saving when an actual file was opened
+		opts = {},
 	},
 	{
 		"stevearc/conform.nvim",
