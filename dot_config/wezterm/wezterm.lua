@@ -31,10 +31,6 @@ config.keys = {
 		key = "m",
 		action = wezterm.action.TogglePaneZoomState,
 	},
-	{
-		key = "CapsLock",
-		action = wezterm.action.SendString("\x1b"),
-	},
 }
 
 return config
