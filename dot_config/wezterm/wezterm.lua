@@ -33,7 +33,7 @@ config.keys = {
 	},
 	{
 		key = "CapsLock",
-		action = wezterm.action.SendKey({ key = "Escape" }),
+		action = wezterm.action.SendString("\x1b"),
 	},
 }
 
