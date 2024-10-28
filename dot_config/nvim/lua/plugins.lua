@@ -6,6 +6,7 @@
 -- TODO: add tmux and/or window/panel remaps
 -- TODO: add sessions
 -- TODO: figure out integrated terminal possibly
+-- TODO: add smart opener (https://github.com/danielfalk/smart-open.nvim)
 
 -- bootstrap lazy nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
