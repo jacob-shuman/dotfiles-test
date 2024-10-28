@@ -154,6 +154,7 @@ local plugins = {
 	},
 
 	-- NOTE: color highlighting
+	-- TODO: add nvim-cmp integration if i add it later
 
 	-- https://github.com/brenoprata10/nvim-highlight-colors
 	"brenoprata10/nvim-highlight-colors",
