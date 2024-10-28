@@ -52,9 +52,16 @@ local plugins = {
 		},
 	},
 	{
-		"olimorris/persisted.nvim",
+		"rmagatti/auto-session",
 		lazy = false,
-		config = true,
+
+		---enables autocomplete for opts
+		---@module "auto-session"
+		---@type AutoSession.Config
+		opts = {
+			suppressed_dirs = { "~/", "~/projects", "~/Downloads", "/" },
+			-- log_level = 'debug',
+		},
 	},
 	{
 		"stevearc/conform.nvim",
@@ -178,14 +185,14 @@ require("telescope").setup({
 			},
 		},
 	},
-	extensions = {
-		persisted = {
-			layout_config = { width = 0.55, height = 0.55 },
-		},
-	},
+	--	extensions = {
+	--		persisted = {
+	--			layout_config = { width = 0.55, height = 0.55 },
+	--		},
+	--	},
 })
 
-require("telescope").load_extension("persisted")
+-- require("telescope").load_extension("persisted")
 
 require("nvim-web-devicons").setup()
 
