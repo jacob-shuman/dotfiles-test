@@ -43,4 +43,9 @@ vim.opt.timeoutlen = 300
 
 -- show whitespace characters
 vim.opt.list = true
-vim.opt.listchars = { tab = "▸ ", trail = "·", nbsp = "␣" }
+vim.opt.listchars = {
+	tab = "▸ ", -- Display tabs with an arrow
+	trail = "·", -- Display trailing spaces as a dot
+	space = "·", -- Display regular spaces as a dot
+	nbsp = "␣", -- Display non-breaking spaces as a special character
+}
