@@ -1,4 +1,3 @@
--- TODO: add indent rainbow plugin
 -- TODO: add linting plugin(s)
 -- TODO: add autocompletion plugin(s)
 -- TODO: add filetree plugin
