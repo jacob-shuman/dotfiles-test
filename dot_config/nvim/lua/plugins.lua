@@ -143,6 +143,8 @@ local plugins = {
 	},
 
 	-- NOTE: indent rainbow
+
+	-- https://github.com/lukas-reineke/indent-blankline.nvim
 	{
 		"lukas-reineke/indent-blankline.nvim",
 		main = "ibl",
@@ -220,4 +222,4 @@ require("lualine").setup({})
 require("Comment").setup()
 
 -- indent-blankline.nvim
-require("ibl").setup()
+require("ibl").setup({ scope = { enabled = false } })
