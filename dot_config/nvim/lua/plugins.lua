@@ -123,6 +123,18 @@ local plugins = {
 		"nvim-lualine/lualine.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons", opt = true },
 	},
+
+	-- NOTE: comments
+
+	-- uses correct comment syntax in embedded languages (svelte, vue, etc)
+	"JoosepAlviste/nvim-ts-context-commentstring",
+
+	-- comment easily using common mappings in
+	{
+		"numToStr/Comment.nvim",
+		opts = {},
+	},
+	-- styles TODO, NOTE, FIX, etc messages
 	{
 		"folke/todo-comments.nvim",
 		dependencies = { "nvim-lua/plenary.nvim" },
