@@ -152,6 +152,11 @@ local plugins = {
 		---@type ibl.config
 		opts = {},
 	},
+
+	-- NOTE: color highlighting
+
+	-- https://github.com/brenoprata10/nvim-highlight-colors
+	"brenoprata10/nvim-highlight-colors",
 }
 
 require("lazy").setup(plugins, {})
