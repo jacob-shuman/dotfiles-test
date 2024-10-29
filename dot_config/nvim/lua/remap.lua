@@ -31,7 +31,7 @@ vim.api.nvim_set_keymap(
 vim.api.nvim_set_keymap(
 	"n",
 	"<C-n>",
-	": vsplit |:Fern . -reveal=% -toggle -right -width=30<CR>",
+	": vsplit |:Fern . -reveal=% -toggle -width=30<CR>",
 	{ noremap = true, silent = true }
 )
 
