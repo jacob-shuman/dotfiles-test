@@ -1,3 +1,6 @@
+-- NOTE: git
+vim.keymap.set("n", "<leader>gg", ":LazyGit<CR>", { noremap = true, silent = true })
+
 -- NOTE: telescope
 local builtin = require("telescope.builtin")
 
