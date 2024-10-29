@@ -127,7 +127,7 @@ local plugins = {
 		end,
 	},
 
-	-- NOTE: visual
+	-- NOTE: theme
 	{
 		"Shatur/neovim-ayu",
 		lazy = false,
@@ -140,16 +140,26 @@ local plugins = {
 			})
 		end,
 	},
+
+	-- NOTE: icons
 	"nvim-tree/nvim-web-devicons",
 	{
 		"nvim-lualine/lualine.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons", opt = true },
 	},
+
+	-- NOTE: telescope (fuzzy finder)
 	{
 		"nvim-telescope/telescope.nvim",
 		branch = "0.1.x",
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},
+	{
+		"nvim-telescope/telescope-file-browser.nvim",
+		dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
+	},
+
+	-- NOTE: smart file search
 	{
 		"danielfalk/smart-open.nvim",
 		branch = "0.2.x",
@@ -163,10 +173,6 @@ local plugins = {
 			-- Optional.  If installed, native fzy will be used when match_algorithm is fzy
 			{ "nvim-telescope/telescope-fzy-native.nvim" },
 		},
-	},
-	{
-		"nvim-telescope/telescope-file-browser.nvim",
-		dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
 	},
 	-- NOTE: file tree
 
@@ -200,6 +206,7 @@ local plugins = {
 		"numToStr/Comment.nvim",
 		opts = {},
 	},
+
 	-- styles TODO, NOTE, FIX, etc messages
 	{
 		"folke/todo-comments.nvim",
@@ -207,7 +214,7 @@ local plugins = {
 		opts = {},
 	},
 
-	-- NOTE: indent rainbow
+	-- NOTE: vertical indentation lines
 
 	-- https://github.com/lukas-reineke/indent-blankline.nvim
 	{
@@ -218,7 +225,7 @@ local plugins = {
 		opts = {},
 	},
 
-	-- NOTE: color highlighting
+	-- NOTE: color highlighting (hex, rgba, hsl, etc)
 	-- TODO: add nvim-cmp integration if i add it later
 
 	-- https://github.com/brenoprata10/nvim-highlight-colors
