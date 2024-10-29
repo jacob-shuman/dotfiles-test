@@ -24,7 +24,8 @@ vim.api.nvim_set_keymap(
 vim.api.nvim_set_keymap(
 	"n",
 	"<C-n>",
-	":Fern . -reveal=% -drawer -toggle -right -width=30<CR>",
+	":Fern . -reveal=% -toggle -right -width=30<CR>",
+	-- ":Fern . -reveal=% -drawer -toggle -right -width=30<CR>",
 	{ noremap = true, silent = true }
 )
 
