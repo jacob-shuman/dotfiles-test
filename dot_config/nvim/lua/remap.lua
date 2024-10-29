@@ -21,11 +21,17 @@ vim.api.nvim_set_keymap(
 
 -- NOTE: ferm.vim
 -- Open fern in a vertical split with Ctrl-n
+-- vim.api.nvim_set_keymap(
+-- 	"n",
+-- 	"<C-n>",
+-- 	":Fern . -reveal=% -toggle -drawer -right -width=30<CR>",
+-- 	-- ":Fern . -reveal=% -drawer -toggle -right -width=30<CR>",
+-- 	{ noremap = true, silent = true }
+-- )
 vim.api.nvim_set_keymap(
 	"n",
 	"<C-n>",
-	":Fern . -reveal=% -toggle -drawer -right -width=30<CR>",
-	-- ":Fern . -reveal=% -drawer -toggle -right -width=30<CR>",
+	":Fern . -reveal=% -toggle -right -width=30<CR>",
 	{ noremap = true, silent = true }
 )
 
