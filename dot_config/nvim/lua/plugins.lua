@@ -139,15 +139,23 @@ local plugins = {
 	},
 	-- NOTE: file tree
 
+	-- {
+	-- 	"nvim-neo-tree/neo-tree.nvim",
+	-- 	branch = "v3.x",
+	-- 	dependencies = {
+	-- 		"nvim-lua/plenary.nvim",
+	-- 		"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+	-- 		"MunifTanjim/nui.nvim",
+	-- 		-- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
+	-- 	},
+	-- },
 	{
-		"nvim-neo-tree/neo-tree.nvim",
-		branch = "v3.x",
-		dependencies = {
-			"nvim-lua/plenary.nvim",
-			"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-			"MunifTanjim/nui.nvim",
-			-- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
-		},
+		"lambdalisue/fern.vim",
+		config = function()
+			-- Open in a split window (e.g., vertical split by default)
+			vim.g["fern#default_hidden"] = 1 -- Show hidden files
+			vim.g["fern#renderer"] = "default" -- Use the default renderer
+		end,
 	},
 
 	-- NOTE: comments
