@@ -4,7 +4,7 @@ vim.keymap.set("n", "<leader>g", ":LazyGit<CR>", { noremap = true, silent = true
 -- NOTE: telescope
 local builtin = require("telescope.builtin")
 
-vim.keymap.set("n", "<leader><leader>", function()
+vim.keymap.set("n", "<leader>fa", function()
 	require("telescope").extensions.smart_open.smart_open()
 end, { noremap = true, silent = true })
 
