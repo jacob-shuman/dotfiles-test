@@ -51,18 +51,23 @@ local plugins = {
 			"rcarriga/nvim-notify",
 		},
 	},
-	{
-		"rmagatti/auto-session",
-		lazy = false,
 
-		---enables autocomplete for opts
-		---@module "auto-session"
-		---@type AutoSession.Config
-		opts = {
-			suppressed_dirs = { "~/", "~/projects", "~/Downloads", "/" },
-			-- log_level = 'debug',
-		},
-	},
+	-- NOTE: sessions
+	--
+	-- {
+	-- 	"rmagatti/auto-session",
+	-- 	lazy = false,
+	--
+	-- 	---enables autocomplete for opts
+	-- 	---@module "auto-session"
+	-- 	---@type AutoSession.Config
+	-- 	opts = {
+	-- 		suppressed_dirs = { "~/", "~/projects", "~/Downloads", "/" },
+	-- 		-- log_level = 'debug',
+	-- 	},
+	-- },
+	-- NOTE: formatting
+	--
 	{
 		"stevearc/conform.nvim",
 		event = { "BufReadPre", "BufNewFile	" },
@@ -97,6 +102,8 @@ local plugins = {
 			})
 		end,
 	},
+
+	-- NOTE: visual
 	{
 		"Shatur/neovim-ayu",
 		lazy = false,
@@ -108,6 +115,11 @@ local plugins = {
 				overrides = {},
 			})
 		end,
+	},
+	"nvim-tree/nvim-web-devicons",
+	{
+		"nvim-lualine/lualine.nvim",
+		dependencies = { "nvim-tree/nvim-web-devicons", opt = true },
 	},
 	{
 		"nvim-telescope/telescope.nvim",
@@ -128,14 +140,9 @@ local plugins = {
 			{ "nvim-telescope/telescope-fzy-native.nvim" },
 		},
 	},
-	"nvim-tree/nvim-web-devicons",
 	{
 		"nvim-telescope/telescope-file-browser.nvim",
 		dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
-	},
-	{
-		"nvim-lualine/lualine.nvim",
-		dependencies = { "nvim-tree/nvim-web-devicons", opt = true },
 	},
 	-- NOTE: file tree
 
