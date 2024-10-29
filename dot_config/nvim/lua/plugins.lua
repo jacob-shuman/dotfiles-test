@@ -7,6 +7,7 @@
 -- TODO: add sessions
 -- TODO: figure out integrated terminal possibly
 -- TODO: add smart opener (https://github.com/danielfalk/smart-open.nvim)
+-- TODO: add ollama plugin
 
 -- bootstrap lazy nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
