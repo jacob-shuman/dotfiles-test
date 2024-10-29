@@ -28,7 +28,7 @@ vim.api.nvim_set_keymap(
 -- 	-- ":Fern . -reveal=% -drawer -toggle -right -width=30<CR>",
 -- 	{ noremap = true, silent = true }
 -- )
-vim.api.nvim_set_keymap("n", "<C-n>", ": vsplit |:Fern . -reveal=% -toggle<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<C-n>", ":vsplit | :Fern . -reveal=% -toggle<CR>", { noremap = true, silent = true })
 
 -- NOTE: todo comments
 vim.keymap.set("n", "]t", function()
