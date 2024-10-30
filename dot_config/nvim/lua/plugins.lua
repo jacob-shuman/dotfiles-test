@@ -90,6 +90,9 @@ local plugins = {
 		},
 	},
 
+	-- add git status to files and folders in fern
+	"lambdalisue/vim-fern-git-status",
+
 	-- NOTE: formatting
 	--
 	{
