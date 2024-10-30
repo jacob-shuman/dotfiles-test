@@ -26,15 +26,15 @@ vim.filetype.add({
 	},
 })
 
-vim.cmd([[
-  autocmd BufRead,BufNewFile \.gitconfig,git/config set filetype=git_config
-]])
-
--- correctly set .gitignore file type
-vim.cmd([[
-  autocmd BufRead,BufNewFile .gitignore set filetype=gitignore
-]])
-
+-- vim.cmd([[
+--   autocmd BufRead,BufNewFile \.gitconfig,git/config set filetype=git_config
+-- ]])
+--
+-- -- correctly set .gitignore file type
+-- vim.cmd([[
+--   autocmd BufRead,BufNewFile .gitignore set filetype=gitignore
+-- ]])
+--
 -- sync nvim and system clipboard
 vim.opt.clipboard = "unnamedplus"
 
