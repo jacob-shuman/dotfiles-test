@@ -44,7 +44,8 @@ end, { desc = "Previous todo comment" })
 -- NOTE: this doesn't override the default register
 
 local function yank_comment_paste()
-	local comment = require("Comment.nvim") -- if vim.fn.mode() == "v" then
+	local comment = require("Comment.api")
+	-- if vim.fn.mode() == "v" then
 	-- 	vim.cmd([[normal! "ay]])
 	-- 	vim.cmd([[normal! gv]])
 	-- 	vim.cmd([[normal! I# ]])
@@ -53,7 +54,9 @@ local function yank_comment_paste()
 	-- 	vim.fn.setreg("a", "")
 	-- else
 	vim.cmd([[normal! "ayy]])
-	vim.cmd([[normal! gcc]])
+	comment.toggle.linewise.current()
+	-- vim.cmd([[normal! gcc]])
+	-- comment.
 	-- vim.cmd([[normal! "ap]])
 	vim.fn.setreg("a", "")
 	-- end
