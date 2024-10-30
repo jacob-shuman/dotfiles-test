@@ -153,7 +153,7 @@ local plugins = {
 			})
 		end,
 	},
-	{ "rose-pine/neovim", name = "rose-pine" },
+	-- { "rose-pine/neovim", name = "rose-pine" },
 
 	-- NOTE: icons
 	{ "nvim-tree/nvim-web-devicons", enabled = vim.g.have_nerd_font },
