@@ -62,4 +62,4 @@ end
 
 -- vim.api.nvim_set_keymap("n", "<leader>yc", ":lua yank_comment_paste()<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "gcp", yank_comment_paste, { noremap = true, silent = true, desc = "yank comment paste" })
-vim.api.nvim_set_keymap("v", "<leader>yc", ":<C-u>lua yank_comment_paste()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "gcp", ":<C-u>lua yank_comment_paste()<CR>", { noremap = true, silent = true })
