@@ -55,9 +55,7 @@ local function yank_comment_paste()
 	-- else
 	vim.cmd([[normal! "ayy]])
 	comment.toggle.linewise.current()
-	-- vim.cmd([[normal! gcc]])
-	-- comment.
-	-- vim.cmd([[normal! "ap]])
+	vim.cmd([[normal! "ap]])
 	vim.fn.setreg("a", "")
 	-- end
 end
