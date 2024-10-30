@@ -14,7 +14,7 @@ vim.opt.shiftwidth = 4
 -- correctly set .gitconfig file type
 vim.filetype.add({
 	pattern = {
-		[".gitconfig"] = "gitconfig",
+		["\\.gitconfig"] = "gitconfig",
 	},
 })
 
