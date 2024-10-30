@@ -292,6 +292,8 @@ require("telescope").setup({
 -- require("telescope").load_extension("persisted")
 
 require("nvim-web-devicons").setup()
+-- add devicons to fern
+vim.g["fern#renderer"] = "nvim-web-devicons"
 
 -- lualine
 require("lualine").setup({})
