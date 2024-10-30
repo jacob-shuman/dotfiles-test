@@ -13,7 +13,7 @@ vim.opt.shiftwidth = 4
 
 -- correctly set .gitconfig file type
 vim.cmd([[
-  autocmd BufRead,BufNewFile .gitconfig,git/config set filetype=git_config
+  autocmd BufRead,BufNewFile \.gitconfig,git/config set filetype=git_config
 ]])
 
 -- correctly set .gitignore file type
