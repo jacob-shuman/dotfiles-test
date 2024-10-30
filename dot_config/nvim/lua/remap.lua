@@ -52,7 +52,7 @@ local function yank_comment_paste()
 	-- 	vim.cmd([[normal! "ap]])
 	-- 	vim.fn.setreg("a", "")
 	-- else
-	vim.cmd([[normal! "ayy]])
+	-- vim.cmd([[normal! "ayy]])
 	vim.cmd([[normal! gcc]])
 	-- vim.cmd([[normal! "ap]])
 	-- 	vim.fn.setreg("a", "")
