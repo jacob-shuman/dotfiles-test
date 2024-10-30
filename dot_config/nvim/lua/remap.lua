@@ -38,6 +38,7 @@ end, { desc = "Next todo comment" })
 
 vim.keymap.set("n", "[t", function()
 	require("todo-comments").jump_prev()
+	-- end, { desc = "Previous todo comment" })
 end, { desc = "Previous todo comment" })
 
 -- NOTE: auto command to yank the current line, comment it, and paste it underneath
@@ -45,19 +46,18 @@ end, { desc = "Previous todo comment" })
 
 local function yank_comment_paste()
 	local comment = require("Comment.api")
-	-- if vim.fn.mode() == "v" then
-	-- 	vim.cmd([[normal! "ay]])
-	-- 	vim.cmd([[normal! gv]])
-	-- 	vim.cmd([[normal! I# ]])
-	-- 	vim.cmd([[normal! gv]])
-	-- 	vim.cmd([[normal! "ap]])
-	-- 	vim.fn.setreg("a", "")
-	-- else
-	vim.cmd([[normal! "ayy]])
-	comment.toggle.linewise.current()
-	vim.cmd([[normal! "ap]])
-	vim.fn.setreg("a", "")
-	-- end
+
+	if vim.fn.mode() == "v" then
+		vim.cmd([[normal! "ay]])
+		comment.toggle.linewise.current()
+		vim.cmd([[normal! "ap]])
+		vim.fn.setreg("a", "")
+	else
+		vim.cmd([[normal! "ayy]])
+		comment.toggle.linewise.current()
+		vim.cmd([[normal! "ap]])
+		vim.fn.setreg("a", "")
+	end
 end
 
 -- vim.api.nvim_set_keymap("n", "<leader>yc", ":lua yank_comment_paste()<CR>", { noremap = true, silent = true })
