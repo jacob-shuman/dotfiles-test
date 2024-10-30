@@ -122,7 +122,16 @@ local plugins = {
 			local configs = require("nvim-treesitter.configs")
 
 			configs.setup({
-				ensure_installed = { "lua", "javascript", "html", "css", "typescript", "svelte", "markdown" },
+				ensure_installed = {
+					"lua",
+					"javascript",
+					"html",
+					"css",
+					"typescript",
+					"svelte",
+					"markdown",
+					"git_config",
+				},
 				sync_install = false,
 				highlight = { enable = true },
 				indent = { enable = true },
