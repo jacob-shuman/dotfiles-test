@@ -5,6 +5,7 @@ source ~/.aliases
 eval "$(zoxide init zsh)"
 
 # zsh vim mode
+# NOTE: https://github.com/jeffreytse/zsh-vi-mode?tab=readme-ov-file#-usage
 source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 # zsh text suggestions
