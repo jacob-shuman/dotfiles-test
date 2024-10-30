@@ -155,7 +155,7 @@ local plugins = {
 	},
 
 	-- NOTE: icons
-	"nvim-tree/nvim-web-devicons",
+	{ "nvim-tree/nvim-web-devicons", enabled = vim.g.have_nerd_font },
 	{
 		"nvim-lualine/lualine.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons", opt = true },
