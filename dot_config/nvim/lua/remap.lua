@@ -47,19 +47,10 @@ end, { desc = "Previous todo comment" })
 local function yank_comment_paste()
 	local comment = require("Comment.api")
 
-	if vim.fn.mode() == "v" then
-		vim.cmd([[normal! "ay]])
-		comment.toggle.linewise.current()
-		vim.cmd([[normal! "ap]])
-		vim.fn.setreg("a", "")
-	else
-		vim.cmd([[normal! "ayy]])
-		comment.toggle.linewise.current()
-		vim.cmd([[normal! "ap]])
-		vim.fn.setreg("a", "")
-	end
+	vim.cmd([[normal! "ayy]])
+	comment.toggle.linewise.current()
+	vim.cmd([[normal! "ap]])
+	vim.fn.setreg("a", "")
 end
 
--- vim.api.nvim_set_keymap("n", "<leader>yc", ":lua yank_comment_paste()<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "gcp", yank_comment_paste, { noremap = true, silent = true, desc = "yank comment paste" })
-vim.keymap.set("v", "gcp", yank_comment_paste, { noremap = true, silent = true, desc = "yank comment paste" })
