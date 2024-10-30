@@ -12,7 +12,7 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 
 -- minimal number of screen lines to keep above and below the cursor
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 30
 
 -- disable listing ignored files/directories in fern
 vim.g.fern_git_status_disable_ignored = 1
