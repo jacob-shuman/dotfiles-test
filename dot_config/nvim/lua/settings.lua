@@ -11,6 +11,9 @@ vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 
+-- disable listing ignored files/directories in fern
+vim.g.fern_git_status_disable_ignored = 1
+
 -- files without extensions use bash
 vim.cmd([[
   augroup set_bash_for_no_extension
