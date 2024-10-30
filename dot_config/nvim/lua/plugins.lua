@@ -131,6 +131,7 @@ local plugins = {
 					"svelte",
 					"markdown",
 					"git_config",
+					"gitignore",
 				},
 				sync_install = false,
 				highlight = { enable = true },
