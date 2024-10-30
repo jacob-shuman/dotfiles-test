@@ -11,6 +11,16 @@ vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 
+-- correctly set .gitconfig file type
+vim.cmd([[
+  autocmd BufRead,BufNewFile *.gitconfig,git/config set filetype=gitconfig
+]])
+
+-- correctly set .gitignore file type
+vim.cmd([[
+  autocmd BufRead,BufNewFile .gitignore set filetype=gitignore
+]])
+
 -- files without extensions use bash
 vim.cmd([[
   augroup set_bash_for_no_extension
