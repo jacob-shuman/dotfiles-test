@@ -44,19 +44,19 @@ end, { desc = "Previous todo comment" })
 -- NOTE: this doesn't override the default register
 
 local function yank_comment_paste()
-	if vim.fn.mode() == "v" then
-		vim.cmd([[normal! "ay]])
-		vim.cmd([[normal! gv]])
-		vim.cmd([[normal! I# ]])
-		vim.cmd([[normal! gv]])
-		vim.cmd([[normal! "ap]])
-		vim.fn.setreg("a", "")
-	else
-		vim.cmd([[normal! "ayy]])
-		vim.cmd([[normal! gcc]])
-		-- vim.cmd([[normal! "ap]])
-		vim.fn.setreg("a", "")
-	end
+	-- if vim.fn.mode() == "v" then
+	-- 	vim.cmd([[normal! "ay]])
+	-- 	vim.cmd([[normal! gv]])
+	-- 	vim.cmd([[normal! I# ]])
+	-- 	vim.cmd([[normal! gv]])
+	-- 	vim.cmd([[normal! "ap]])
+	-- 	vim.fn.setreg("a", "")
+	-- else
+	vim.cmd([[normal! "ayy]])
+	vim.cmd([[normal! gcc]])
+	-- vim.cmd([[normal! "ap]])
+	-- 	vim.fn.setreg("a", "")
+	-- end
 end
 
 -- vim.api.nvim_set_keymap("n", "<leader>yc", ":lua yank_comment_paste()<CR>", { noremap = true, silent = true })
