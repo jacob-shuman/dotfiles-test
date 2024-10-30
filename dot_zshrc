@@ -4,6 +4,9 @@ source ~/.aliases
 # setup cd alternative
 eval "$(zoxide init zsh)"
 
+# zsh vim mode
+source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+
 # zsh text suggestions
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
