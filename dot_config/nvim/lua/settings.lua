@@ -12,6 +12,12 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 
 -- correctly set .gitconfig file type
+vim.filetype.add({
+	pattern = {
+		[".*/.gitconfig-*"] = "git_config",
+	},
+})
+
 vim.cmd([[
   autocmd BufRead,BufNewFile \.gitconfig,git/config set filetype=git_config
 ]])
