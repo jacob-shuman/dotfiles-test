@@ -36,7 +36,7 @@ vim.cmd([[
 ]])
 
 -- set highlight on search but clear it on <Esc> in normal mode
-vim.opt.hlsearch = true
+-- vim.opt.hlsearch = true
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 -- sync nvim and system clipboard
