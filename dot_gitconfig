@@ -16,3 +16,5 @@
 	ui = auto
 [branch]
 	sort = -committerdate
+[feature]
+    manyFiles = true
