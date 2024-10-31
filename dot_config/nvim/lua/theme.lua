@@ -1,5 +1,5 @@
 vim.cmd.colorscheme("ayu")
--- vim.cmd.colorscheme("rose-pine")
+vim.cmd.colorscheme("rose-pine")
 vim.g.have_nerd_font = true
 vim.opt.showmode = false
 vim.opt.termguicolors = true
