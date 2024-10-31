@@ -1,5 +1,10 @@
 -- NOTE: move line up/down
-vim.keymap.set("n", "<A-j>", ":m 1", { desc = "move line down", noremap = true, silent = true })
+vim.keymap.set(
+	"n",
+	"<A-j>",
+	":move .+<C-r>=v:count1<CR><CR>==",
+	{ desc = "move line down", noremap = true, silent = true }
+)
 
 -- NOTE: git
 vim.keymap.set("n", "<leader>g", ":LazyGit<CR>", { noremap = true, silent = true })
