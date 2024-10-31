@@ -16,6 +16,10 @@ alias ghpd='gh pr create -fda @me'
 alias un='pnpx unscript'
 alias una='pnpx unscript -a'
 
+# TODO: use 'dt' as dotfiles alias prefix
+# TODO: add 'dta' alias to add new file to dotfiles using stow (should auto move/symlink required files/folders recursively)
+# TODO: add 'dtg' alias to open dotfiles git repo using lazy git
+
 # chezmoi
 alias ch='chezmoi'
 alias cha='ch add'
