@@ -6,13 +6,16 @@ alias lsa='eza -lAhF'
 alias lss='du -sh *'
 alias ping='gping'
 alias n='nvim'
-alias ni='nvim --headless +PlugInstall +qall'
 alias bup='brew upgrade'
+# github
+
 alias ghd='github .'
 alias ghv='gh repo view -w'
 alias ghpv='gh pr view -w'
 alias ghp='gh pr create -fa @me'
 alias ghpd='gh pr create -fda @me'
+
+# unscript
 alias un='pnpx unscript'
 alias una='pnpx unscript -a'
 
