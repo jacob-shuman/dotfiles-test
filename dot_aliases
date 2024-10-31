@@ -20,7 +20,7 @@ alias una='pnpx unscript -a'
 # TODO: add 'dta' alias to add new file to dotfiles using stow (should auto move/symlink required files/folders recursively)
 # TODO: add 'dtg' alias to open dotfiles git repo using lazy git
 alias dtg='lazygit --path ~/dotfiles'
-
+alias cddt='cd ~/dotfiles'
 # TODO: add glob file (similar to .gitignore) which will encrypt matching file(s)/folders pre commit and decrypt them on pull
 
 # chezmoi
