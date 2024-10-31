@@ -32,6 +32,9 @@ alias chg='chezmoi git'
 alias chv='chd && ghv && cd -'
 alias chn='ch edit --apply'
 
+# sleep
+alias sleepnow='sudo pmset sleepnow'
+
 # quick restart
 alias restart='sudo shutdown -r now'
 
