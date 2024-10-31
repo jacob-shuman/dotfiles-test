@@ -1,4 +1,4 @@
--- NOTE: move line up/down
+-- NOTE: move single line up/down
 vim.keymap.set(
 	"n",
 	"<A-j>",
