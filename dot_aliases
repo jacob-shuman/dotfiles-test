@@ -7,8 +7,10 @@ alias lss='du -sh *'
 alias ping='gping'
 alias n='nvim'
 alias bup='brew upgrade'
-# github
 
+# git
+alias lg='lazygit'
+# github
 alias ghd='github .'
 alias ghv='gh repo view -w'
 alias ghpv='gh pr view -w'
@@ -22,7 +24,7 @@ alias una='pnpx unscript -a'
 # TODO: use 'dt' as dotfiles alias prefix
 # TODO: add 'dta' alias to add new file to dotfiles using stow (should auto move/symlink required files/folders recursively)
 # TODO: add 'dtg' alias to open dotfiles git repo using lazy git
-alias dtg='lazygit --path ~/dotfiles'
+alias lgdt='lazygit --path ~/dotfiles'
 alias cddt='cd ~/dotfiles'
 # TODO: add glob file (similar to .gitignore) which will encrypt matching file(s)/folders pre commit and decrypt them on pull
 
@@ -42,12 +44,12 @@ alias sleepnow='sudo pmset sleepnow'
 alias restart='sudo shutdown -r now'
 
 # config
-alias nzrc='ch edit --apply ~/.zshrc'
-alias nza='ch edit --apply ~/.aliases && resource'
-alias ncr='ch edit --apply ~/.cron'
-alias nrc='ch edit --apply ~/.config/nvim/init.lua'
-alias nwrc='ch edit --apply ~/.config/wezterm/wezterm.lua'
-alias ngit='ch edit --apply ~/.gitconfig'
+alias nzrc='~/.zshrc'
+alias nza='~/.aliases && resource'
+alias ncr='~/.cron'
+alias nrc='~/.config/nvim/init.lua'
+alias nwrc='~/.config/wezterm/wezterm.lua'
+alias ngit=' ~/.gitconfig'
 
 # git
 alias gitc='git commit'
